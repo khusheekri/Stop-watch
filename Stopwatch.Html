@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="fa-solid fa-stopwatch fa-3x"></i></div>
+        <div class="watch"><h1>Stop Watch</h1></div>
+    </header>
+    
+    <div class="box">
+        <h1 id="displayTime">00:00:00</h1>
+        <div class="circle"></div>
+        <div class="row2">
+            <div class="stop" onclick="watchStop()"><i class="fa-regular fa-circle-stop fa-4x"></i></div>
+            <div class="start" onclick="watchStart()"><i class="fa-regular fa-circle-play fa-4x"></i></div>
+            <div class="reset" onclick="watchReset()"><i class="fa-solid fa-rotate-right fa-4x"></i></div>
+        </div>
+        
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
